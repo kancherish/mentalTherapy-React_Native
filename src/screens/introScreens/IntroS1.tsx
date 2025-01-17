@@ -1,14 +1,15 @@
-import { Alert, Image, ImageBackground, Pressable, StyleSheet, Text, View } from 'react-native'
+import { Image, ImageBackground, Pressable, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import PageIndicator from '../../components/PageIndicator'
-import { StackNavigationState } from '@react-navigation/native'
-import { NativeStackScreenProps } from '@react-navigation/native-stack'
 
 const IntroS1 = ({ navigation }: any) => {
   return (
     <View style={styles.screen}>
       <Pressable
         style={styles.skipBtn}
+        onPress={()=>{
+          navigation?.navigate("login")
+         }}
       >
         <Text>
           SKIP {">"}
@@ -75,8 +76,8 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   screenImg: {
-    height: "70%",
-    width: "70%",
+    height: "80%",
+    width: "80%",
     resizeMode: "contain"
 
   },

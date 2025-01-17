@@ -8,6 +8,9 @@ const IntroS4 = ({navigation}:any) => {
     <View style={styles.screen}>
       <Pressable
        style={styles.skipBtn}
+       onPress={()=>{
+        navigation?.navigate("login")
+       }}
        >
         <Text>
           SKIP {">"}

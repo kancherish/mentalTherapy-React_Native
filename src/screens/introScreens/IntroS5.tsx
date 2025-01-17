@@ -29,7 +29,7 @@ const IntroS5 = ({navigation}:any) => {
         <Pressable
         style={styles.nextBtn}
         onPress={()=>{
-          navigation?.navigate("intro3")}
+          navigation?.navigate("login")}
           }>
           <Text style={styles.nextBtnTxt}>Get Started</Text>
         </Pressable>
